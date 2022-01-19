@@ -1,5 +1,5 @@
 //
-//  circle.swift
+//  ClippedCircleView.swift
 //  SwiftUIChallenge
 //
 //  Created by Udhayanila Mohanraj on 16/01/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct clippedCircle: View {
+struct ClippedCircleView: View {
     @State var color: Color = .blue
     @State var circleXOffSet: CGFloat = 0
     @State var circleYOffSet: CGFloat = 0
@@ -34,8 +34,8 @@ struct clippedCircle: View {
     }
 }
 
-struct circle_Previews: PreviewProvider {
+struct ClippedCircleView_Previews: PreviewProvider {
     static var previews: some View {
-        clippedCircle()
+        ClippedCircleView()
     }
 }

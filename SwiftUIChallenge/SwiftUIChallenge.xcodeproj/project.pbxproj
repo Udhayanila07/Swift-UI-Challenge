@@ -20,8 +20,15 @@
 		E14D0B9F279326680061D92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E14D0B8D279326680061D92F /* Assets.xcassets */; };
 		E14D0BA0279326680061D92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E14D0B8D279326680061D92F /* Assets.xcassets */; };
 		E14D0BAC279357E50061D92F /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D0BAB279357E50061D92F /* Signup.swift */; };
-		E1E6E9282794776900865E20 /* clippedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6E927279457CD00865E20 /* clippedCircle.swift */; };
-		E1E6E9292794776C00865E20 /* clippedCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6E927279457CD00865E20 /* clippedCircle.swift */; };
+		E195E07327988840002B8BBD /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195E07227988840002B8BBD /* TextFieldView.swift */; };
+		E195E07427988840002B8BBD /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195E07227988840002B8BBD /* TextFieldView.swift */; };
+		E195E075279889C8002B8BBD /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14D0BAB279357E50061D92F /* Signup.swift */; };
+		E195E07A27989046002B8BBD /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195E07927989046002B8BBD /* CircleView.swift */; };
+		E195E07B27989046002B8BBD /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195E07927989046002B8BBD /* CircleView.swift */; };
+		E195E07F27989453002B8BBD /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195E07E27989453002B8BBD /* TextView.swift */; };
+		E195E08027989453002B8BBD /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195E07E27989453002B8BBD /* TextView.swift */; };
+		E1E6E9282794776900865E20 /* ClippedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6E927279457CD00865E20 /* ClippedCircleView.swift */; };
+		E1E6E9292794776C00865E20 /* ClippedCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6E927279457CD00865E20 /* ClippedCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +43,10 @@
 		E14D0BAB279357E50061D92F /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
 		E14D0BAF2793F1320061D92F /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 		E14D0BB02793F13B0061D92F /* Oswald-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Regular.ttf"; sourceTree = "<group>"; };
-		E1E6E927279457CD00865E20 /* clippedCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clippedCircle.swift; sourceTree = "<group>"; };
+		E195E07227988840002B8BBD /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		E195E07927989046002B8BBD /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		E195E07E27989453002B8BBD /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		E1E6E927279457CD00865E20 /* ClippedCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippedCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +80,12 @@
 		E14D0B8A279326650061D92F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E14D0BAF2793F1320061D92F /* Pacifico-Regular.ttf */,
-				E14278B92795E6D800E4ED04 /* Lato-Bold.ttf */,
-				E14D0BB02793F13B0061D92F /* Oswald-Regular.ttf */,
+				E14D0B8D279326680061D92F /* Assets.xcassets */,
+				E195E07D279893D9002B8BBD /* Fonts */,
 				E14D0B8B279326650061D92F /* SwiftUIChallengeApp.swift */,
 				E14D0B8C279326650061D92F /* Login.swift */,
 				E14D0BAB279357E50061D92F /* Signup.swift */,
-				E1E6E927279457CD00865E20 /* clippedCircle.swift */,
-				E14D0B8D279326680061D92F /* Assets.xcassets */,
+				E195E07C279893AF002B8BBD /* Common */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -97,6 +105,27 @@
 				E14D0B9A279326680061D92F /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		E195E07C279893AF002B8BBD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E195E07927989046002B8BBD /* CircleView.swift */,
+				E1E6E927279457CD00865E20 /* ClippedCircleView.swift */,
+				E195E07227988840002B8BBD /* TextFieldView.swift */,
+				E195E07E27989453002B8BBD /* TextView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E195E07D279893D9002B8BBD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E14278B92795E6D800E4ED04 /* Lato-Bold.ttf */,
+				E14D0BB02793F13B0061D92F /* Oswald-Regular.ttf */,
+				E14D0BAF2793F1320061D92F /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E195E07A27989046002B8BBD /* CircleView.swift in Sources */,
 				E14D0B9D279326680061D92F /* Login.swift in Sources */,
-				E1E6E9282794776900865E20 /* clippedCircle.swift in Sources */,
+				E1E6E9282794776900865E20 /* ClippedCircleView.swift in Sources */,
+				E195E07F27989453002B8BBD /* TextView.swift in Sources */,
+				E195E07327988840002B8BBD /* TextFieldView.swift in Sources */,
 				E14D0B9B279326680061D92F /* SwiftUIChallengeApp.swift in Sources */,
 				E14D0BAC279357E50061D92F /* Signup.swift in Sources */,
 			);
@@ -214,7 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1E6E9292794776C00865E20 /* clippedCircle.swift in Sources */,
+				E195E07B27989046002B8BBD /* CircleView.swift in Sources */,
+				E1E6E9292794776C00865E20 /* ClippedCircleView.swift in Sources */,
+				E195E075279889C8002B8BBD /* Signup.swift in Sources */,
+				E195E08027989453002B8BBD /* TextView.swift in Sources */,
+				E195E07427988840002B8BBD /* TextFieldView.swift in Sources */,
 				E14D0B9E279326680061D92F /* Login.swift in Sources */,
 				E14D0B9C279326680061D92F /* SwiftUIChallengeApp.swift in Sources */,
 			);
